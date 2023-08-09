@@ -1,11 +1,9 @@
-const { Schema, model } = require('mongoose');
-
-// Schema to create Student model
+const { Schema, Types } = require('mongoose');
 const reactionSchema = new Schema(
   {
     reactionId: {
-      type: ObjectId,
-      default: new ObjectId,
+      type: Schema.Types.ObjectId,
+      default: () => new Types.ObjectId(),
     },
     reactionBody: {
       type: String,
@@ -20,16 +18,13 @@ const reactionSchema = new Schema(
         type: Date,
         default: Date.now,
     },
-  }
-  ,
+  },
   {
     toJSON: {
       getters: true,
     },
+    id: false,
   }
 );
 
-//TODO: not a model, but will be used as reaction field's subdoc schema in thought model
-//const Reaction = model('reaction', reactionSchema);
-
-module.exports = User;
+module.exports = reactionSchema;
