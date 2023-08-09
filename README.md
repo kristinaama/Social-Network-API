@@ -31,6 +31,12 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
   ## Usage:
   This Social Network API is intended for easy navigation by using the command line interface. The user begins by typing 'npm start' in the command line. The user can interact with the API endpoints by using Insomnia or running it on local host.
 
+
+
+https://github.com/kristinaama/Social-Network-API/assets/127279859/74d20247-a5c7-4b05-ae67-39d6622bf037
+
+
+
   An example of how to use this ReadMe Generator can be found here: https://watch.screencastify.com/v/I3KUVvfNvuAZw8QSo8S8
   
   ## Contributions:
